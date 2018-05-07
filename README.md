@@ -1,1 +1,4 @@
-# CustomCamera
+# 自定义相机
+   实现的功能: 拍摄身份证正面和反面,拍出的照片和预览框中的大小一致.
+   相关文章:[Android 自定义相机 识别身份证(上)](https://www.jianshu.com/p/d754ad9fc9b2)
+   
