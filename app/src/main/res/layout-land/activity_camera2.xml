@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <SurfaceView
+        android:id="@+id/camera_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/preview_mock" />
+
+            <LinearLayout
+                android:id="@+id/camera_crop_container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/preview_mock" />
+
+                <ImageView
+                    android:id="@+id/camera_crop"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/preview_mock"
+                    android:gravity="center"
+                    android:text="@string/touch_to_focus"
+                    android:textColor="#afff"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:background="@color/preview_mock">
+
+            <LinearLayout
+                android:id="@+id/camera_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/camera_take"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_margin="32dp"
+                    android:src="@mipmap/camera_take" />
+
+                <ImageView
+                    android:id="@+id/camera_close"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/camera_close" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>

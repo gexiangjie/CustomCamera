@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CustomCamera</string>
+    <string name="touch_to_focus">触摸屏幕对焦</string>
+</resources>
